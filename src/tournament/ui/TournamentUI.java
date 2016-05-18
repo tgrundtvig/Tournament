@@ -21,5 +21,6 @@ public interface TournamentUI
     public void matchFinished(int matchIndex);
     public void tournamentFinished(List<ParticipantInfo> sortedParticipants);
     public void timeoutOccurred(String id, String method);
+    public void timeConsumedReport(String id, long milliseconds);
     public void error(String s);
 }

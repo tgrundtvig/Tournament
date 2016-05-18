@@ -204,6 +204,14 @@ public class TextTournamentUI implements TournamentUI
     }
     
     @Override
+    public void timeConsumedReport(String id, long milliseconds)
+    {
+        out.println("*******************************************************************");
+        out.println("TIME CONSUMED: " + id + " : " + (milliseconds / 60000) + " minutes.");
+        out.println("*******************************************************************");
+    }
+    
+    @Override
     public void error(String s)
     {
         out.println("ERROR: " + s);

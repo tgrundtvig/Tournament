@@ -77,5 +77,13 @@ public class SimpleTournamentUI implements TournamentUI
     {
         System.out.println("ERROR: " + s);
     }
+
+    @Override
+    public void timeConsumedReport(String id, long milliseconds)
+    {
+        System.out.println("*******************************************************************");
+        System.out.println("TIME CONSUMED: " + id + " : " + (milliseconds / 60000) + " minutes.");
+        System.out.println("*******************************************************************");
+    }
     
 }

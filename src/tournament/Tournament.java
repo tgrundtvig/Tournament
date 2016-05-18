@@ -61,7 +61,7 @@ public class Tournament
         //Choose UI
         TournamentUI ui = new TextTournamentUI();
         //Choose executor
-        MatchExecutor executor = new MultiThreadMatchExecutor(16);
+        MatchExecutor executor = new MultiThreadMatchExecutor(8);
         
         //Create tournament instance
         TournamentImpl t = new TournamentImpl(ui, executor);
